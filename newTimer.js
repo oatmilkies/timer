@@ -29,11 +29,11 @@ rl.on('line', (input) => {
     setTimeout(() => {
       process.stdout.write(`🚨 ${input} seconds 🚨\n`);
     }, input * 1000);
-  }  
+  }
 });
 
 //Print a goodbye message before the program exits
 rl.on('SIGINT', () => {
-  process.stdout.write(`Thanks for using me, ciao!\n`)
-  rl.close()
+  process.stdout.write(`Thanks for using me, ciao!\n`);
+  rl.close();
 });
