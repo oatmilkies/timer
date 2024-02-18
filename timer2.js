@@ -7,7 +7,7 @@ const timer = function(num) {
 
   for (let n = 0; n < num.length; n++) {
     //Beep the alarm if the user presses "b"
-    if (num[n] = "b") {
+    if (num[n] === "b") {
       process.stdout.write(`🚨 BEEP!!! 🚨\n`);
       //Check that the arguments are a positive number
     } else if (isNaN(num[n]) || num.length === 0 || num[n] < 0) {
